@@ -1,0 +1,12 @@
+{
+  "name": "security-health-check",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Minimal scan runner for the Security Health Check.",
+  "main": "scan.js",
+  "scripts": {
+    "scan": "node scan.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

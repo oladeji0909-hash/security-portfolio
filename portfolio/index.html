@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student web developer & security specialist portfolio.">
+    <title>Security-Focused Web Developer</title>
+    <style>
+      :root {
+        font-family: "Inter", system-ui, sans-serif;
+        line-height: 1.6;
+        color: #0f172a;
+        background: #f8fafc;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      header {
+        padding-top: 1rem;
+      }
+      .hero {
+        background: #0d1b2a;
+        color: white;
+        padding: 2.5rem;
+        border-radius: 1rem;
+      }
+      .cta {
+        background: #38bdf8;
+        color: #0f172a;
+        border: none;
+        padding: 0.9rem 1.4rem;
+        border-radius: 999px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+      .projects {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+      }
+      .badge {
+        display: inline-flex;
+        padding: 0.2rem 0.8rem;
+        border-radius: 999px;
+        background: #e0f2fe;
+        color: #0369a1;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+      }
+      footer {
+        margin-top: 3rem;
+        padding: 1rem 0;
+        border-top: 1px solid #cbd5f5;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #475569;
+      }
+      @media (max-width: 600px) {
+        .hero {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="hero">
+          <p class="badge">Student Developer + Security Specialist</p>
+          <h1>Web experiences that are polished, usable, and hardened.</h1>
+          <p>
+            I build static sites, landing pages, and small apps with security baked in.
+            Everything ships with the controls, monitoring, and briefings that keep attackers out.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <button class="cta" onclick="document.getElementById('scan').scrollIntoView({ behavior: 'smooth' })">
+              Book a free 10-minute scan
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section style="margin-top: 2.5rem;">
+        <h2>Selected demos</h2>
+        <div class="grid projects">
+          <article class="card">
+            <h3>Secure SaaS landing</h3>
+            <p>Tailwind + Next.js landing page with authentication-first hero and OWASP security checklist callout.</p>
+            <p><strong>Highlights:</strong> CSP, automated form sanitization, staged deploy preview.</p>
+          </article>
+          <article class="card">
+            <h3>Monitoring dashboard</h3>
+            <p>React dashboard wired to mock Supabase data with role-based views and audit trail UI.</p>
+            <p><strong>Highlights:</strong> Row-level policies, MFA prompts, Supabase functions.</p>
+          </article>
+          <article class="card">
+            <h3>Appointment booking MVP</h3>
+            <p>Mobile-friendly booking for studios with Supabase auth, notifications, and low ECS cost.</p>
+            <p><strong>Highlights:</strong> HTTPS everywhere, rate limited API, automated backup hooks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section style="margin-top: 2.5rem;">
+        <h2>Offerings</h2>
+        <div class="grid projects">
+          <article class="card">
+            <h3>Security Health Check</h3>
+            <p>Automated scan + manual review → editable 1–2 page PDF report listing prioritized fixes.</p>
+            <p><strong>Price:</strong> $50–$200 with upsells for remediation/monitoring.</p>
+          </article>
+          <article class="card">
+            <h3>Landing pages & templates</h3>
+            <p>Complete Tailwind/HTML templates you can deploy instantly and customize from the admin panel.</p>
+            <p><strong>Price:</strong> $10–$50 per template, $100+ for customization.</p>
+          </article>
+          <article class="card">
+            <h3>MVP builds + retainers</h3>
+            <p>Supabase-backed apps with booking, e-commerce, or dashboards plus optional $50–$300/mo retainers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="scan" style="margin-top: 2.5rem;">
+        <div class="card">
+          <h2>Free 10-minute scan</h2>
+          <p>Send me your URL, and I’ll run a fast Health Check covering HTTPS, headers, OWASP Top 10, open directories, and visible risks.</p>
+          <p>The result is a PDF with findings, recommendations, and optional remediation help.</p>
+          <p><strong>Next step:</strong> contact me at <a href="mailto:oladeji0909@icloud.com">oladeji0909@icloud.com</a> with your site link and availability.</p>
+        </div>
+      </section>
+
+      <section style="margin-top: 2.5rem;">
+        <div class="card">
+          <h2>Get in touch</h2>
+          <p>GitHub demos: <a href="https://github.com/">github.com/username</a></p>
+          <p>Phone: +1 (346) 885-3232 (answers within 24 hours).</p>
+          <p>Emails: <a href="mailto:oladeji0909@icloud.com">oladeji0909@icloud.com</a> · <a href="mailto:oladeji0909@gmail.com">oladeji0909@gmail.com</a></p>
+          <p>Ready for remote work—happy to help Columbus/OH teams as well.</p>
+        </div>
+      </section>
+
+      <footer>
+        Portfolio + scan combo designed for credibility. Built with security-first best practices every time.
+      </footer>
+    </main>
+  </body>
+</html>
